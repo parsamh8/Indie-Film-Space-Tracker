@@ -6,14 +6,13 @@ const animations = {
     exit: {opacity: 0, x: -100},
 }
 
-const Animated = ({children}) => {
+const Animated = () => {
   return (
     <motion.div variants={animations} 
     initial='initial'
     animate='animate' 
     exit='exit'
     transition={ {duration: 1}}>
-      {children}
     </motion.div>
   )
 }
