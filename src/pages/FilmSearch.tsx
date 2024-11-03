@@ -17,6 +17,7 @@ const FilmSearch = () => {
 
   const [searchInput, setSearchInput] = useState<string>('');
 
+
   const addToWatchList = () => {
     let parsedFilmsToWatch: Film[] = [];
     const storedFilmsToWatch = localStorage.getItem('filmsToWatch');
@@ -39,6 +40,7 @@ const FilmSearch = () => {
       JSON.stringify(parsedAlreadySeenFilms)
     );
   };
+
 
   const searchForFilmByTitle = async (event: FormEvent, film_title: string) => {
     event.preventDefault();
